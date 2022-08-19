@@ -5,15 +5,19 @@ import Square from './components/Square'
 const App = () => {
   
 const [board, setBoard] = useState(["?", "?", "?", "?", "?", "?", "?", "?", "?"])
+
+const treeEmoji = () => {
+  alert("🎋")
+}
   
 const handleGamePlay = (index) => {
-alert(index)
+alert('NOO!')
 }
 
     return(
       <>
-        <h1>Treasure Hunt Game</h1>
-        <div classNamer="boardgame">
+        <h1>Mystery BOXES</h1>
+        <div className="boardgame">
         {board.map((value, index) => {
           return (
             <Square value={value} index={index} handleGamePlay={handleGamePlay}/>
